@@ -1,0 +1,39 @@
+.wrapper {
+    position: relative;
+    overflow-x: scroll;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Eczar' , Helvetica, Arial, sans-serif;
+    display: flex;
+}
+
+.card2 {
+    overflow: hidden;
+    min-width: 50vw;
+    height: 60vh;
+    position: sticky;
+    left: 10vw;
+    top: 5vh;
+    box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10vw;
+    margin-right: 20vw;
+  
+    h2 {
+      padding: 0;
+    }
+    span {
+      display: block;
+      font-size: 14px;
+    }
+}
+
+@for $i from 1 through 8 {
+    .card2:nth-child(#{$i}n) {
+      left: $i * 20px;
+      left: random(200) + $i * 1px;
+      top: random(130) + $i * 1px;
+      transform: rotate(random(3) - 2 * 1deg);
+    }
+}

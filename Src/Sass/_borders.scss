@@ -1,0 +1,13 @@
+@each $key, $val in $colors {
+    .border-#{$key} {
+        border: $base-border-thickness solid;
+        border-color: $val;
+    }
+
+    @for $i from 1 to 6 {
+        .border-#{$key}-thick-#{$i} {
+            border: $base-border-thickness * $i solid;
+            border-color: $val;
+        }
+    }
+}

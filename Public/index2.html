@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.min.css">
+    <title>Darkest Times</title>
+</head>
+<body>
+    <section id="part11" class="bg-size container-fluid height-100 bg-center" style="background-image: url(images/beforeDungeon.jpg);">
+
+        <div class="height-5"></div>
+
+        <section class="height-80 display-f justify-center align-center">
+            <div id="part12" class="">
+                <div class="width-60">
+                    <div class="row gap-1">
+                        <div class="col-lg-8 display-f align-center">
+                            <img src="images/entranceDungeon.jpg" class="width-40 border-black-thick-3 br-xs img" alt="Entrance Dungeon">
+                        </div>
+                        <div class="card col-lg-4 border-black-thick-3 br-xs bg-opa-6">
+                            <div class="card-header text-dark-dark-2 text-under text-center">
+                                <h2>Select your class</h2>
+                            </div>
+                            <div id="choice" class="card-body">
+                                <div class="card-text mt-3">
+                                    <h3 class="text-info-light-2 text-under">Tank</h3>
+                                    <p class="text-white">Full defense, mid damage, low speed.</p>
+                                    <button id="tank" value="0" class="btn2-outline-warning text-black width-5 font-600 mt-1 ml-2">This</button>
+                                </div>
+                                <div class="card-text mt-3">
+                                    <h3 class="text-info-light-2 text-under">Rogue</h3>
+                                    <p class="text-white">Full speed, mid damage, low defense.</p>
+                                    <button id="rogue" value="1" class="btn2-outline-warning text-black width-5 font-600 mt-1 ml-2">This</button>
+                                </div>
+                                <div class="card-text mt-3">
+                                    <h3 class="text-info-light-2 text-under">Archer</h3>
+                                    <p class="text-white">Full damage, mid speed, low defense.</p>
+                                    <button id="archer" value="2" class="btn2-outline-warning text-black width-5 font-600 mt-1 ml-2">This</button>
+                                </div>
+                                <div class="card-text mt-3">
+                                    <h3 class="text-info-light-2 text-under">Vagabond</h3>
+                                    <p class="text-white">Mid values, standard experience.</p>
+                                    <button id="vagabond" value="3" class="btn2-outline-warning text-black width-5 font-600 mt-1 ml-2">This</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <button id="finallyEnter" class="btn-exhov-info border-dark p-1 font-xl display-n">Finally, Enter?</button>
+            
+        </section>
+
+        <footer class="m-0 p-0">
+            <div class="row">
+                <div class="col-lg-1 mr-1">
+                    <img src="images/alterEgo.png" class="img width-10" alt="your mind alter ego">
+                </div>
+                
+                <div class="card bg-opa-8 col-lg-2 height-12">
+                    <div class="card-text display-f align-center">
+                        <p id="alterEgo" class="text-white mt-2 pl-2"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <section id="part13" class="bg-size container-fluid height-100 bg-center display-n" style="background-image: url(images/dungeon2.jpg);">
+
+        <div class="navbar bg-opa-7 br-xs border-black-thick-3">
+            <h1 class="brand text-dark-dark-3">
+                Darkest Times
+            </h1>
+            <div>
+                <div class="row justify-center">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">HP</label>
+                            <input id="boardHp" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">Damage</label>
+                            <input id="boardDam" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">Defense</label>
+                            <input id="boardDef" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">Speed</label>
+                            <input id="boardSpd" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">Exp</label>
+                            <input id="boardExp" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label class="justify-center display-f text-light text-under">Gold</label>
+                            <input id="boardGold" type="text" class="input text-dark-light-2 text-center" disabled>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="height-65 display-f justify-center align-center">
+
+            <div id="nextRoom" class="">
+                <button class="btn-scale-light bg-opa-5 text-danger border-black-thick-5">Next room</button>
+            </div>
+            
+            <div id="part14" class="display-n">
+                <div class="width-60">
+                    <div class="row">
+                        <div class="card border-black-thick-3 col-lg-8 display-f align-center">
+                            <img id="imgEnemies" src="images/dungeon.jpg" class="card-img img" alt="enemies">
+                            <div class="card-img-overlay">
+                                <div class="card-header text-danger text-under text-center">
+                                    <h2 id="enemName">Enemies</h2>
+                                </div>
+                                <div class="card-text">
+                                    <div class="height-35"></div>
+                                    <div class="row justify-space-between">
+                                        <div id="battleButton0" class="col-3">
+                                            <button id="attack" class="btn2-danger pl-3 pr-3 text-warning font-600">Attack</button>
+                                        </div>
+                                        <div id="battleButton1" class="col-3">
+                                            <button id="run" class="btn2-success pl-3 pr-3 text-warning font-600">Escape</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 border-black-thick-3 ml-1 br-xs bg-opa-7">
+                            
+                            <div class="card-header text-center">
+                                <h2 class="text-dark">Information</h2>
+                            </div>
+                            <div class="card-body height-35">
+                                <div id="infoNameEnemie" class="card-subtitle text-danger font-lg"></div>
+                                <div class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores at molestias officiis similique esse vel recusandae quos assumenda? Delectus tenetur aut necessitatibus commodi? Libero eaque deserunt iusto sequi recusandae.</div>
+                            </div>
+                            <div class="card-footer display-f justify-space-between">
+                                
+                                <div class="row justify-center">
+                                    <div class="col-lg-11">
+                                        <label class="justify-center display-f text-light text-under">Damage</label>
+                                        <input id="enemDam" type="text" class="input text-dark-light-2 text-center" disabled>
+                                    </div> 
+                                </div>
+                                <div class="row justify-center">
+                                    <div class="col-lg-11">
+                                        <label class="justify-center display-f text-light text-under">Defense</label>
+                                        <input id="enemDef" type="text" class="input text-dark-light-2 text-center" disabled>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="part15" class="display-n">
+                <div class="width-55">
+                    <div class="row justify-center">
+                        <div class="card border-black-thick-3 col-lg-4">
+                            <img src="images/merchant.jpg" class="img card-img" alt="Merchant">
+                            <div class="card-img-overlay">
+                                <div class="card-header text-danger text-under text-center height-58">
+                                    <h2 id="merchName"></h2>
+                                </div>
+                                <div class="display-f justify-center">
+                                    <button id="leaveMerch" class="btn2-extra-dark p-0 pl-3 pr-3">Leave</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-5 border-black-thick-3 ml-1 br-xs bg-opa-7">
+                            
+                            <div class="card-header text-center">
+                                <h2 class="text-dark">Store</h2>
+                            </div>
+                            <div class="card-body height-20">
+
+                                <div class="card-text text-center text-white height-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores at molestias.</div>
+                                <div class="card-text">
+                                    <div class="row text-center mt-4">
+                                        <div class="col-lg-6">
+                                            <h3 class="text-light text-under">Buy</h3>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3 class="text-light text-under">Sell</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text">
+                                    <div class="row text-center mt-4">
+                                        <div class="col-lg-6">
+                                            <select id="selectMerchant" class="text-warning bg-black font-md">
+                                                
+                                            </select>
+                                            
+                                            <div id="buyMerch">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div id="sellMerch">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="height-15 display-f align-flex-end justify-center">
+                                        <div id="infoMerch" class="text-white font-600"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 border-black-thick-3 ml-1 br-xs bg-opa-7 height-30">
+
+                            <div class="card-header text-center">
+                                <h3 class="text-dark text-under">Upgrades</h3>
+                            </div>
+                            <div class="card-text text-center text-white">
+                               <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div id="upGrades" class="card-footer display-f justify-space-between">
+                                <div class="row justify-center">
+                                    <div class="row justify-center mt-1">
+                                        <div class="col-lg-12">
+                                            <button id="upDam" value="1" class="btn2-danger text-white p-0 pl-2 pr-3">Damage +</button>
+                                        </div> 
+                                    </div>
+                                    <div class="row justify-center mt-1">
+                                        <div class="col-lg-12">
+                                            <button id="upDef" value="2" class="btn2-secondary text-white p-0 pl-2 pr-3">Defense +</button>
+                                        </div> 
+                                    </div>
+                                    <div class="row justify-center mt-1">
+                                        <div class="col-lg-12">
+                                            <button id="upSpd" value="3" class="btn2-warning p-0 pl-2 pr-3">Speed +</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="part16" class="display-n">
+                <div class="display-f justify-center width-60">
+                    <div class="card border-black-thick-3 col-lg-6">
+                        <img src="images/trap.png" class="img card-img" alt="Trap">
+                        <div class="card-img-overlay display-f justify-center align-flex-end">
+                            <button id="leaveTrap" class="btn2-extra-dark p-0 pl-3 pr-3 mr-2">Leave</button>
+                            <button id="goTrap" class="btn2-extra-dark p-0 pl-3 pr-3">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part17" class="display-n">
+                <div class="display-f justify-center width-60">
+                    <div class="card col-lg-7">
+                        <img src="images/campfire.jpg" class="img card-img" alt="Trap">
+                        <div class="card-img-overlay display-f justify-center align-flex-end">
+                            <button id="leaveCamp" class="btn2-extra-dark p-0 pl-3 pr-3 mr-2">Leave</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part18" class="display-n">
+                <a href="index3.html"><button class="btn-scale-light bg-opa-5 text-danger border-black-thick-5">Final Room</button></a>
+            </div>
+        </div>
+
+        <footer class="p-0 m-0 row">
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-2 mr-1">
+                        <img src="images/alterEgo.png" class="img width-10" alt="your mind alter ego">
+                    </div>
+                    <div class="card bg-opa-8 col-lg-5 mb-4">
+                        <div class="card-text display-f align-center">
+                            <p id="alterEgo1" class="text-white mt-2 pl-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 display-f justify-flex-end align-flex-end mb-3">
+                <div class="card border-black-thick-3 bg-opa-8 width-10 height-5 mr-1">
+                    <div class="text-info-light-1 text-under text-center">
+                        <h2>Inventory</h2>
+                    </div>
+                </div>
+                <div id="displayInv" class="row justify-center align-center">
+                    <select id="changeWeapon" class="text-warning bg-black font-md width-15">
+                        
+                    </select>
+                </div>
+            </div>  
+        </footer>
+    </section>
+
+    <script src="JS/index2.js" type="module"></script>
+</body>
+</html>

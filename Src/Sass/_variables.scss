@@ -1,0 +1,42 @@
+//theme colors
+$primary: #BB9981 !default;
+$secondary: #8E05C2 !default;
+$success: #4E9F3D !default;
+$warning: #FEC260 !default;
+$danger: #950101 !default;
+$info: #03506F !default;
+$light: #B4A5A5 !default;
+$dark: #C06014 !default;
+
+//color palette 
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "danger": $danger,
+    "info": $info,
+    "light": $light,
+    "dark": $dark,
+    "black": black,
+    "white": white,
+);
+
+//spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+//borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+//box shadow
+$base-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+//font size
+$regular-font: 1rem;
+$small-font: $regular-font * 0.75 !default;
+$large-font: $regular-font * 1.5 !default;
+$xl-font: $regular-font * 2 !default;
+$xxl-font: $regular-font * 3 !default;
+$title-font: $regular-font * 5 !default;
